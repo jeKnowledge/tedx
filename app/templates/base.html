@@ -8,9 +8,13 @@
     </head>
     <body>
       <div>
-        <a href="{{url_for('index')}}">Home</a>
-        <a href="{{url_for('vieworators')}}">Orators</a>
-        <a href="{{url_for('insertorator')}}">Insert an Orator</a>
+        <a href="{{url_for('index')}}">Homepage</a>
+        <a href="{{url_for('tedx')}}">TED & TEDx</a>
+        <a href="{{url_for('vieworators')}}">Oradores & Performances</a>
+        <a href="{{url_for('program')}}">Programa</a>
+        <a href="{{url_for('partners')}}">Parceiros</a>
+        <a href="{{url_for('team')}}">Comissão Organizadora</a>
+        <a href="{{url_for('tickets')}}">Bilhetes</a>
         {% if not current_user.is_anonymous %}
         <a href="{{ url_for('logout') }}">Logout</a>
         {% endif %}
@@ -26,5 +30,20 @@
         {% endif %}
       {% endwith %}
       {% block content %}{% endblock %}
+
+      <footer>
+        <hr>
+        <p>This is the footer</p>
+        <a href="#">Facebook</a>
+        <p>
+          Email: tedxuniversidadedecoimbra@nemaac.net <br>
+          Morada: <br>
+          Pólo das Ciências da Saúde da Universidade de Coimbra <br>
+          Unidade Central, Piso -1 <br>
+          Azinhaga de Santa Comba, Celas <br>
+          3000-548 Coimbra <br>
+          "This independent TEDx event is operated under license from TED."
+        </p>
+      </footer>
     </body>
 </html>

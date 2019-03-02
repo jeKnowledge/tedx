@@ -8,7 +8,11 @@ from werkzeug.urls import url_parse
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', information="I'm Flask Server!")
+    return render_template('index.html')
+
+@app.route('/tedx')
+def tedx():
+    return render_template('tedx.html')
 
 @app.route('/vieworators')
 def vieworators():
@@ -17,7 +21,7 @@ def vieworators():
 
 
 @app.route('/insertorator', methods=['GET', 'POST'])
-@login_required   # Diz que para aceder a esta página é necessário estar loggado
+@login_required
 def insertorator():
     form = InsertOratorForm()
     if(request.method == 'POST' and form.validate_on_submit()):
@@ -52,3 +56,19 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+@app.route('/program')
+def program():
+    return render_template('program.html')
+
+@app.route('/partners')
+def partners():
+    return render_template('partners.html')
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+@app.route('/tickets')
+def tickets():
+    return render_template('tickets.html')

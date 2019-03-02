@@ -5,14 +5,19 @@
   {%- for message in get_flashed_messages() %}
          {{ message }}
   {%- endfor %}
+  <form action="{{url_for('insertorator')}}" >
+    <input type="submit" value="Inserir um orador"
+      style="display: block; margin-bottom: 5px" type="button">
+    </input>
+  </form>
   {% for orator in orators %}
     <div class="" style="
           border: 1px solid black;
           margin: 2px 2px 2px 2px;
           padding-left: 5px;
           display: inline-block;
-          width: 400px;
-          height: 400px;
+          width: 30%;
+          height: 50%;
           ">
       <img src="{{ orator.photo }}" alt="Photo Unavaliable"></img>
       <h2>{{ orator.name }}</h2>
