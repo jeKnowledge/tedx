@@ -136,23 +136,23 @@ label {
   background-image: url('../img/bckgted.jpg');
   background-position: center;
   background-size: cover;
+  display: flex;
 }
 #tedtedx h3{
   color: #ffffff;
   text-align: center;
-  padding-top: 140px;
+  padding-top: 176px;
   font-size: 3em;
 }
-#line{
-  width: 100%;
+#tedtedx .line {
+  width: 100px;
+  display: flex;
   height: 3px;
-  text-align: center;
   background-color: #E62B1E;
-  margin-top: 8px;
 }
 .video {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 .video_pequeno {
   display: none;
@@ -189,14 +189,14 @@ label {
 
 /*-----------------------COMPARE------------------------*/
 #compare {
-  height: 490px;
+  height: 540px;
 }
 .tabContainer{
     width: 100%;
     height: 400px;
 }
 .tabContainer .buttonContainer{
-    height: 150px;
+    height: 200px;
 }
 .tabContainer .buttonContainer button{
     width: 50%;
@@ -224,87 +224,74 @@ label {
     display: none;
 }
 #compare p {
-  padding: 0 100px 0 100px;
+  padding: 10px 100px 0 100px;
   font-size: 14px;
   font-weight: lighter;
-}
-#compare a {
-  text-decoration: none;
-  color: #E62B1E;
 }
 #tab_1 p{
   color: #ffffff;
 }
 #tab_2 p {
-  padding-top: 60px;
   color: #000000;
-}
-.tabContainer .buttonContainer .left {
-    background-color: #000000;
-}
-#compare_mobile {
-  font-size: 14px;
-  font-weight: lighter;
-  display: none;
-}
-#compare_mobile a {
-  text-decoration: none;
-  color: #E62B1E;
-}
-.container_ted {
-  background-color: #000000;
-  color: #ffffff;
-  height: 500px;
-  padding: 10px 40px 0 40px;
-}
-.container_ted img {
-  padding-left: 50px;
-}
-.container_ted p {
-  padding-top: 20px;
-}
-.container_tedx {
-  background-color: #ffffff;
-  color: #000000;
-  height: 300px;
-  padding: 10px 40px 0 40px;
 }
 
-@media screen and (max-width: 1000px) {
-  #compare p {
-    padding: 0 40px 0 40px;
-  }
-}
-@media screen and (max-width: 840px) {
-  #compare {
-    display: none;
-  }
-  #compare_mobile {
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  #compare_mobile {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .container_ted {
-    height: 700px;
-  }
-  .container_ted p {
-    padding-top: 50px;
-  }
-  .container_tedx {
-    height: 400px;
-  }
-  .container_tedx p {
-    padding-top: 30px;
-  }
-  .container_tedx img{
-    margin-left: -60px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -314,7 +301,6 @@ label {
   height: 180px;
   border-top: 6px solid #E62B1E;
 }
-
 .container_contact {
   display: flex;
   justify-content: space-between;

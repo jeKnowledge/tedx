@@ -140,7 +140,7 @@ label {
 #home ul{
   font-size: 64px;
   padding-top: 140px;
-  padding-left: 70px;
+  padding-left: 71px;
   margin-right: 600px;
 }
 #home .dia , .coimbra {
@@ -153,46 +153,14 @@ label {
 #home .inconformismo_grande{
   float: right;
   padding-right: 71px;
-  margin-top: -200px;
+  margin-top: -86px;
 }
 #home .inconformismo_pequeno {
   display: none;
 }
-#home .inconformismo_medio {
-  display: none;
-}
 
-.start-btn {
-  padding-top: 50px;
 
-}
-.start-btn a {
-  text-decoration: inherit;
-  font-size: 24px;
-  background-color: #E62B1E;
-  color: #ffffff;
-  margin-left: 70px;
-  padding: 17px 52px;
-  transition: 250ms;
-}
-.start-btn a:hover {
-  background-color: rgba(230,43,30, 0.6);
-  color: rgba(255,255,255,0.8);
-}
-
-@media screen and (max-width: 1100px) {
-  #home .inconformismo_grande{
-    display: none;
-  }
-  #home .inconformismo_medio {
-    display: inherit;
-    padding-left: 400px;
-  }
-}
 @media screen and (max-width: 840px) {
-  .start-btn a{
-    margin-left: 20px;
-  }
   #home {
     background-position: left;
   }
@@ -200,14 +168,14 @@ label {
     height: 740px;
   }
   #home ul {
-    padding-left: 50px;
+    padding-left: 20px;
     font-size: 46px;
   }
   #home .ano {
     color:#E62B1E;
     padding-left: 109px;
   }
-  #home .inconformismo_medio{
+  #home .inconformismo_grande{
     display: none;
   }
   #home .inconformismo_pequeno {
@@ -260,14 +228,8 @@ label {
   height: 480px;
   color: #ffffff;
 }
-.container_news1 {
+.container_news {
   display: flex;
-  border-bottom: 6px solid #E62B1E;
-  background-color: #000000;
-  position: relative;
-}
-.container_news2 {
-  display: none;
   border-bottom: 6px solid #E62B1E;
   background-color: #000000;
   position: relative;
@@ -275,7 +237,7 @@ label {
 .container_news_phone {
   display: none;
 }
-.new_1 img , .new_2 img , .new_3 img , .new_4 img{
+.new_1 img , .new_2 img{
   float: left;
   width: 100%;
   padding: 0;
@@ -338,7 +300,7 @@ label {
 .texto_info {
   font-weight: lighter;
   font-size: 1em;
-  padding: 70px 100px 100px 100px;
+  padding: 80px 80px 80px 80px;
   color: #000000;
 }
 @media screen and (max-width: 840px) {

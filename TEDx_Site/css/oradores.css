@@ -53,7 +53,7 @@ li::before{
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #E62B1E;
+  background-color: #000000;
   position:static;
   width: 0%;
   transition: all ease-in-out 250ms;
@@ -174,13 +174,11 @@ label {
 }
 .nome {
   margin-top: -20px;
+  color: #ffffff;
 }
 .container_oradores h2{
   padding-top: 20px;
   color: #ffffff;
-}
-.nome {
-    color: #ffffff;
 }
 .description {
   color: #E62B1E;
@@ -189,6 +187,21 @@ label {
 .container_oradores a {
   color: #E62B1E;
 }
+/*--------------------------ORADOREES_MOBILE---------------------*/
+@media screen and (max-width: 840px) {
+  #oradores_list {
+    height: 3000px;
+  }
+  .container_oradores {
+    display:block;
+    font-size: 12px;
+  }
+  .orador_2content{
+    height: 1200px;
+  }
+
+}
+
 
 /*--------------------------ORADOR_1---------------------*/
 .orador_1{
@@ -206,7 +219,7 @@ label {
 }
 .orador_1content{
  width: 75%;
- height: 65%;
+ height: 500px;
  background-color: #000000;
  position: absolute;
  top: 50%;
@@ -250,7 +263,7 @@ margin: 2em;
 .orador_2{
 background-color: rgba(0,0,0);
 width:100%;
-height: 100vh;
+height: 900px;
 position: absolute;
 top: 0;
 left: 0;
@@ -263,7 +276,7 @@ padding-top: 130px;
 }
 .orador_2content{
 width: 75%;
-height: 65%;
+height: 900px;;
 background-color: #000000;
 position: absolute;
 top: 50%;
@@ -503,34 +516,120 @@ margin: 2em;
 
 
 
+
+
 /*--------------------------PERFORMANCES---------------------*/
 #performances {
-  height: 800px;
+  height: 650px;
   background-color: #ffffff;
 }
-#performances h3{
-  color: #000000;
+#performances h3 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
   font-size: 3em;
 }
-#performances #line{
+.perf_container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+#line{
   width: 100%;
   height: 3px;
   background-color: #E62B1E;
   margin-top: 8px;
 }
-
-
-/*--------------------------ORADOREES_MOBILE---------------------*/
-@media screen and (max-width: 840px) {
-  #oradores_list {
-    height: 3000px;
-  }
-  .container_oradores {
-    display:block;
-  }
+.perf_container h2{
+  padding-top: 60px;
+  color: #ffffff;
 }
+.description {
+  color: #E62B1E;
+  padding-top: 10px;
+}
+.perf_container a {
+  color: #E62B1E;
+}
+
+
+/*--------------------------PERFORMANCE_1---------------------*/
+.perf_1{
+ background-color: rgba(0,0,0);
+ width:100%;
+ height: 100vh;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ margin-top: 800px;
+ transition: all .5s;
+}
+.perf_nome p {
+  color: #000000;
+}
+.perf_1 h2 {
+  padding-top: 10px;
+}
+.perf_1content{
+ width: 75%;
+ height: 65%;
+ background-color: #000000;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#perf_1:target{
+ opacity: 1;
+ visibility: visible;
+}
+#perf_1:target .perf_1content{
+ opacity: 1;
+ visibility: visible;
+}
+.perf_1close{
+ color: #363636;
+ font-size: 2em;
+ position: absolute;
+ top: .5em;
+ right: 1em;
+}
+.perf_1heading{
+ margin-bottom: 1em;
+}
+.perf_1paragraph{
+ line-height: 1.5em;
+ color: #ffffff;
+}
+.perf_1open{
+display: inline-block;
+margin: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------FOOTER---------------------*/
