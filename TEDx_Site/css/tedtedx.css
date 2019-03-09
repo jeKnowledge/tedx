@@ -130,66 +130,117 @@ label {
 }
 
 /*-----------------------HOME------------------------*/
-
 #tedtedx {
-  height: 960px;
-  background-image: url('../img/bckgted.jpg');
+  height: 800px;
+  background-image: url('../img/videoback.jpg');
   background-position: center;
   background-size: cover;
-  display: flex;
 }
-#tedtedx h3{
-  color: #ffffff;
+.container_video {
+  padding-top: 30px;
   text-align: center;
-  padding-top: 176px;
-  font-size: 3em;
-}
-#tedtedx .line {
-  width: 100px;
   display: flex;
-  height: 3px;
-  background-color: #E62B1E;
+  justify-content: space-around;
 }
-.video {
-  text-align: center;
-  padding-top: 80px;
+.container_video a {
+  color: #E62B1E;
+  float: right;
+  margin-top: -30px;
+  margin-right: -15px;
+  text-decoration: none;
+  font-size: 2em;
 }
-.video_pequeno {
-  display: none;
+.video{
+ background-color: rgba(0,0,0, 0.6);
+ width:100%;
+ height: 800px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
 }
-.video_mobile {
-  display: none;
+.videoG {
+  padding-left: 10px;
 }
-@media screen and (max-width: 900px) {
-  #tedtedx {
-    height: 800px;
-  }
-  .video {
+.video_content{
+ width: 90%;
+ height: 560px;
+ background-color: #ffffff;
+ border-radius: 25px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#video:target{
+ opacity: 1;
+ visibility: visible;
+}
+#video:target .video_content{
+ opacity: 1;
+ visibility: visible;
+}
+.video_open{
+  padding-top: 10em;
+}
+.videoM {
+  visibility: hidden;
+}
+.videoP {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1150px) {
+  .videoG {
     display: none;
   }
-  .video_pequeno {
-    padding-top: 92px;
-    text-align: center;
-    display: block;
+  .video_content{
+    height: 300px;
+  }
+  .videoM {
+    visibility: inherit;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
   #tedtedx {
     height: 600px;
   }
-  .video_pequeno {
+  .videoM {
     display: none;
   }
-  .video_mobile {
-    padding-top: 60px;
-    text-align: center;
-    display: block;
+  .videoP {
+    margin-left: -5px;
+    visibility: inherit;
+  }
+  .video_content {
+    height: 190px;
+    width: 80%
+  }
+  .video{
+    height: 540px;
+    margin-top: 70px;
+    border-radius: 2px;
+  }
+  .container_video a {
+    font-size: 18px;
   }
 }
+
+
 
 /*-----------------------COMPARE------------------------*/
 #compare {
   height: 540px;
+}
+.tedbtn {
+  background-color: #000000;
 }
 .tabContainer{
     width: 100%;
@@ -207,8 +258,7 @@ label {
     cursor: pointer;
     padding: 10px;
     font-family: sans-serif;
-    font-size: 18px;
-    background-color: #ffffff;
+    font-size: 18px
 }
 .tabContainer .buttonContainer button:hover{
     background-color: #d7d4d4;
@@ -224,7 +274,7 @@ label {
     display: none;
 }
 #compare p {
-  padding: 10px 100px 0 100px;
+  padding: 0px 100px 0 100px;
   font-size: 14px;
   font-weight: lighter;
 }
@@ -233,65 +283,86 @@ label {
 }
 #tab_2 p {
   color: #000000;
+  padding-top: 60px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#compare a {
+  text-decoration: none;
+  color: #E62B1E;
+}
+.mobile {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+}
+.mobile .m_ted {
+  background-color: #000000;
+  color: #ffffff;
+  height: 400px;
+}
+.mobile .m_tedx {
+  height: 400px;
+}
+.m_tedx {
+  padding-top: 45px;
+}
+.m_ted{
+  padding-top:45px;
+}
+@media screen and (max-width: 1000px) {
+  #compare {
+    height: 600px;
+  }
+  #compare p {
+    padding: 0 40px 0 40px;
+  }
+  .tabContainer {
+    height: 470px;
+  }
+  #tab_2 p {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 840px) {
+  #tedtedx {
+    height: 500px;
+  }
+  .video {
+    height: 430px;
+  }
+  #compare {
+    height: 850px;
+  }
+  .tabContainer {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  #compare .m_tedx{
+    padding-top:80px;
+  }
+  #compare p {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #compare {
+    height: 900px;
+  }
+    #compare p {
+      font-size: 10px;
+    }
+    .mobile .m_ted {
+      height: 480px;
+    }
+    #compare .m_tedx{
+      padding-top:45px;
+    }
+    #compare .m_ted{
+      padding-top:80px;
+    }
+}
 
 
 

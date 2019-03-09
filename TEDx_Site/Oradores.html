@@ -21,9 +21,9 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="TED&TEDx.html">TED & TEDx</a></li>
           <li><a href="Oradores.html">ORADORES</a></li>
-          <li><a href="#programa">PROGRAMA</a></li>
-          <li><a href="#parceiros">PARCEIROS</a></li>
-          <li><a href="#equipa">EQUIPA</a></li>
+          <li><a href="Programa.html">PROGRAMA</a></li>
+          <li><a href="Parceiros.html">PARCEIROS</a></li>
+          <li><a href="Equipa.html">EQUIPA</a></li>
           <li><a href="#bilhetes">BILHETES</a></li>
         </ul>
         <div class="nav_2">
@@ -33,9 +33,9 @@
             <a href="index.html">HOME</a>
             <a href="TED&TEDx.html">TED & TEDx</a>
             <a href="#Oradores.html">ORADORES</a>
-            <a href="#index.html">PROGRAMA</a>
-            <a href="#index.html">PARCEIROS</a>
-            <a href="#index.html">EQUIPA</a>
+            <a href="Programa.html">PROGRAMA</a>
+            <a href="Parceiros.html">PARCEIROS</a>
+            <a href="Equipa.html">EQUIPA</a>
             <a href="#index.html">BILHETES</a>
           </div>
         </div>
@@ -45,14 +45,16 @@
 
 <section id="home_oradores">
   <h3>Oradores</h3>
-  <div id="line"></div>
 </section>
 
 
 <section id="oradores_list">
 
-  <div class="container_oradores">
+  <div class="info">
+    <p>(Carrega num orador para veres mais informação acerca dele)</p>
+  </div>
 
+  <div class="container_oradores">
     <div class="foto">
       <a href="#orador_1" class="orador_1open"><img width="250" height="250" src='img/rabaneaW.png' onmouseover="this.src='img/rabanea.png';" onmouseout="this.src='img/rabaneaW.png';" /></a>
       <p class="nome">André Rabanea</p>
@@ -73,7 +75,7 @@
    <p class="nome">Miguel Neiva</p>
  </div>
  <div class="orador_2" id="orador_2">
-    <div class="orador_1content">
+    <div class="orador_2content">
       <a href="#oradores_list" class="orador_2close">&times;</a>
       <img width="250" height="250" src='img/neiva.png'/>
       <h2 class="orador_2heading">Miguel Neiva</h2>
@@ -113,7 +115,6 @@ Hoje dedica-se exclusivamente a “dar cor à vida” e anda pelo mundo. Miguel 
     <a href="#oradores_list" class="orador_4close">&times;</a>
     <img width="250" height="250" src='img/carona.png'/>
     <h2 class="orador_4heading">Gustavo Carona</h2>
-    <p class="description">Cofounder & Creative at Beta-i, Founder & Chairman at Torkecc, Cofounder Stuntsoccer, Founder BillytheGroup</p>
     <p class="orador_4paragraph">Nasceu em Toronto em 1980, mas vive na cidade do Porto desde 1982, onde tem todas as suas raízes. Licenciou-se pela Faculdade de Medicina da Universidade do Porto em 2004. Em 2011 concluiu a especialidade de Anestesiologia, e em 2014 a Sub-Especialidade de Cuidados Intensivos, ambas no Hospital de São Joao.
 Em 2009 faz a sua 1ª Missão Humanitária em Moçambique, pelos Médicos pelo Mundo. No entanto, queria mais. Assim, ainda em 2009 torna-se parte dos Médicos sem Fronteiras. Desde então nunca mais parou, tendo trabalhado em Missões Humanitárias em países como o Congo, Afeganistão, Paquistão, Síria e República Central Africana.
 Em 2017, um mês antes de embarcar em mais uma Missão, desta vez em Mosul, pediu a todos, através das redes sociais, que enviassem uma mensagem para o povo do Norte do Iraque, prometendo que entregaria todas elas àqueles que se encontravam em sofrimento e necessitados de ânimo. Daí surge o seu 1º livro, “1001 Cartas para Mosul”. Cerca de 1 ano depois, lança o seu 2º livro, “O Mundo Precisa de Saber”, um relato na primeira pessoa das suas várias Missões.
@@ -188,42 +189,25 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 
 <section id="performances">
   <h3>Performances</h3>
-  <div id="line"></div>
 
 
 
   <div class="perf_container">
 
-    <div class="foto">
-      <a href="#perf_1" class="perf_1open"><img width="515" height="364" src='img/adaeternumB.png' onmouseover="this.src='img/adaeternum.jpg';" onmouseout="this.src='img/adaeternumB.png';" /></a>
-      <p class="pref_nome">Ad Aeternum</p>
-    </div>
 
- <div class="perf_1" id="perf_1">
-    <div class="perf_1content">
-      <a href="#performances" class="perf_1close">&times;</a>
-      <img width="515" height="364" src='img/adaeternum.jpg'/>
-      <h2 class="perf_1heading">Ad Aeternum</h2>
-      <p class="description">Grupo de Fado “Ad æternum”</p>
-      <p class="perf_1paragraph">Na cidade dos estudantes, falar de tradição é falar do Fado de Coimbra. Ao longo de gerações, ouvir cantar o amor, a liberdade, a mudança e a saudade fez parte do percurso de quem por cá passa. Porque também celebramos as tradições, temos a honra de apresentar o Grupo de Fado “Ad æternum” como nossos primeiros performers. Criado em outubro de 2015 por 6 estudantes da Universidade de Coimbra, com diferentes percursos musicais, este projeto inspira-se em grandes nomes da canção coimbrã, como Edmundo</p>
+    <h1>Ad aeternum</h1>
+    <a href="#modal" class="modal-open"><p>Saber mais</p></a>
+
+    <div class="modal" id="modal">
+       <div class="modal__content">
+         <a href="#performances" class="modal__close">&times;</a>
+         <p class="modal__paragraph">Na cidade dos estudantes, falar de tradição é falar do Fado de Coimbra. Ao longo de gerações, ouvir cantar o amor, a liberdade, a mudança e a saudade fez parte do percurso de quem por cá passa. Porque também celebramos as tradições, temos a honra de apresentar o Grupo de Fado “Ad æternum” como nossos primeiros performers. Criado em outubro de 2015 por 6 estudantes da Universidade de Coimbra, com diferentes percursos musicais, este projeto inspira-se em grandes nomes da canção coimbrã, como Edmundo </p>
+       </div>
     </div>
- </div>
 
   </div>
 
-
-
-
-
-
-
-
 </section>
-
-
-
-
-
 
 <section id="footer">
   <div class="container_contact">

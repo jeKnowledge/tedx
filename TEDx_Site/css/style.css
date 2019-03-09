@@ -158,8 +158,36 @@ label {
 #home .inconformismo_pequeno {
   display: none;
 }
-
-
+#home .inconformismo_medio {
+  display: none;
+}
+.start-btn {
+  margin-top: 50px;
+}
+#home a {
+  text-decoration: inherit;
+  font-size: 24px;
+  background-color: #E62B1E;
+  color: #ffffff;
+  margin-left: 70px;
+  padding: 17px 52px;
+  transition: 250ms;
+}
+#home a:hover {
+  background-color: rgba(197,32,51, 0.6);
+  color: rgba(255,255,255,0.8);
+}
+@media screen and (max-width: 1000px) {
+  #home .inconformismo_grande{
+    display: none;
+  }
+  #home .inconformismo_medio {
+    display: inherit;
+    float: right;
+    padding-right: 40px;
+    margin-bottom: 40px;
+  }
+}
 @media screen and (max-width: 840px) {
   #home {
     background-position: left;
@@ -175,7 +203,7 @@ label {
     color:#E62B1E;
     padding-left: 109px;
   }
-  #home .inconformismo_grande{
+  #home .inconformismo_medio {
     display: none;
   }
   #home .inconformismo_pequeno {
