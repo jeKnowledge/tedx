@@ -16,7 +16,7 @@ nav {
 }
 .logo img {
   position: fixed;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-left: 20px;
 }
 nav ul {
@@ -159,25 +159,40 @@ label {
   color: #ffffff;
   font-size: 2em;
 }
-.start-btn {
-  margin-top: 50px;
+
+/*-----------------------PARTNERS------------------------*/
+#partners {
+  height: 1000px;
+  background-color: #ffffff;
 }
-#part_home a {
-  text-decoration: inherit;
-  font-size: 24px;
-  background-color: #E62B1E;
-  color: #ffffff;
-  padding: 17px 52px;
-  transition: 250ms;
+.part_container {
+  padding-top: 100px;
+  display: block;
+  text-align: center;
 }
-#part_home a:hover {
-  background-color: rgba(197,32,51, 0.6);
-  color: rgba(255,255,255,0.8);
+.part_container p {
+  font-size: 1em;
+  font-weight: lighter;
+  padding: 50px 150px 0 150px;
+}
+.part_2 {
+  padding-top: 60px;
+}
+.mobile {
+  display: none;
 }
 
-
-
-
+@media screen and (max-width: 600px) {
+  .part_container p{
+    padding: 50px 50px 0 50px;
+  }
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
+}
 
 
 
@@ -209,7 +224,13 @@ label {
   padding: 32px 0px 0px 180px;
 }
 .right {
-  padding: 80px 180px 0px 0px;
+  padding: 32px 180px 0px 0px;
+}
+.right p {
+  padding-top: 60px;
+}
+.right img{
+  float: right;
 }
 .container_credit {
   font-size: 10px;
@@ -220,40 +241,49 @@ label {
   padding-right: 180px;
 }
 .container_credit p {
-  text-align: right;s
+  text-align: right;
   width: 100%;
   border-top: 1px solid #FFFFFF;
   padding-top: 5px;
 }
+.contact_mobile {
+  display: none;
+  justify-content: space-around;
+  padding: 40px 20px 0 20px;
+}
+.contact_mobile p {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 20px 50px 0 50px;
+  color: #ffffff;
+}
 @media screen and (max-width: 840px) {
   .left {
-    padding: 30px 0px 0px 80px;
+    padding: 30px 0px 0px 30px;
   }
   .right {
-    padding: 60px 80px 0px 0px;
+    padding: 30px 30px 0px 0px;
   }
   .right p{
     padding-left: 80px;
   }
   .container_credit {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media screen and (max-width: 600px) {
-  .left p {
+  .contact_mobile {
+    display: flex;
+  }
+  .container_contact {
     display: none;
   }
-  .left {
-    padding: 40px 0px 0px 40px;
-  }
-  .right {
-    padding: 50px 40px 0px 0px;
-  }
   .container_credit {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .right p {
+  .right img {
+    padding-right: 60px;
   }
 }
