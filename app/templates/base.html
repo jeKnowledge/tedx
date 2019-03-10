@@ -1,12 +1,56 @@
-<html>
+<html class="{{ page }}"lang="en" dir="ltr">
     <head>
+      <meta charset="utf-8">
       {% if title %}
       <title>{{ title }}</title>
       {% else %}
       <title>TedX Coimbra</title>
       {% endif %}
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+      {% if page == "tedtedx" %}
+      <link rel="stylesheet" href="{{url_for('static', filename='css/tedtedx.css')}}">
+      <div class="line"></div>
+      {% endif %}
+
+      {% if page == "oradores" %}
+      <link rel="stylesheet" href="{{url_for('static', filename='css/oradores.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      {% endif %}
     </head>
     <body>
+      <nav>
+        <div class='nav'>
+          <div class='logo'>
+            <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/logo.png')}}"
+               width="197" height="42"></a>
+          </div>
+          <ul class="nav_1">
+            <li><a href="{{url_for('index')}}">HOME</a></li>
+            <li><a href="{{url_for('tedx')}}">TED & TEDx</a></li>
+            <li><a href="{{url_for('vieworators')}}">ORADORES</a></li>
+            <li><a href="{{url_for('program')}}">PROGRAMA</a></li>
+            <li><a href="{{url_for('partners')}}">PARCEIROS</a></li>
+            <li><a href="{{url_for('team')}}">EQUIPA</a></li>
+            <li><a href="{{url_for('tickets')}}">BILHETES</a></li>
+          </ul>
+          <div class="nav_2">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+              <a href="{{url_for('index')}}">HOME</a>
+              <a href="{{url_for('tedx')}}">TED & TEDx</a>
+              <a href="{{url_for('vieworators')}}">ORADORES</a>
+              <a href="{{url_for('program')}}">PROGRAMA</a>
+              <a href="{{url_for('partners')}}">PARCEIROS</a>
+              <a href="{{url_for('team')}}">EQUIPA</a>
+              <a href="{{url_for('tickets')}}">BILHETES</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- DELETE -->
       <div>
         <a href="{{url_for('index')}}">Homepage</a>
         <a href="{{url_for('tedx')}}">TED & TEDx</a>
@@ -31,19 +75,27 @@
       {% endwith %}
       {% block content %}{% endblock %}
 
-      <footer>
-        <hr>
-        <p>This is the footer</p>
-        <a href="#">Facebook</a>
-        <p>
-          Email: tedxuniversidadedecoimbra@nemaac.net <br>
-          Morada: <br>
-          Pólo das Ciências da Saúde da Universidade de Coimbra <br>
-          Unidade Central, Piso -1 <br>
-          Azinhaga de Santa Comba, Celas <br>
-          3000-548 Coimbra <br>
-          "This independent TEDx event is operated under license from TED."
-        </p>
-      </footer>
+      <section id="footer">
+        <div class="container_contact">
+          <div class="left">
+            <div class="social">
+              <a href="https://www.facebook.com/tedxuniversidadedecoimbra/">
+                <img src="{{url_for('static', filename='img/fb.png')}}" height="30"></a>
+              <a href=""><img src="{{url_for('static', filename='img/fk.png')}}" height="30"></a>
+              <a href="https://www.instagram.com/tedxuniversidadedecoimbra/">
+                <img src="{{url_for('static', filename='img/ig.png')}}" height="30"></a>
+              <a href="mailto:tedxuniversidadedecoimbra@nemaac.net">
+                <img src="{{url_for('static', filename='img/ml.png')}}" height="30"></a>
+            </div>
+            <p>Pólo das Ciências da Saúde da Universidade de Coimbra<br>Unidade Central, Piso -1<br>Azinhaga de Santa Comba, Celas<br>3000-548 Coimbra</p>
+          </div>
+          <div class="right">
+            <p>This independent TEDx event is operated under license from TED.</p>
+          </div>
+        </div>
+        <div class="container_credit">
+          <p>© jeKnowledge 2019. ALL RIGHTS RESERVED</p>
+        </div>
+      </section>
     </body>
 </html>

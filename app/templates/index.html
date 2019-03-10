@@ -1,28 +1,80 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Homepage</h1>
-  <img src="#" alt="Imagem em grande com logo oficial">
-  <h2>Tema e Data</h2>
-  <h3>Possivelmente uma countdown. E video</h3>
-  <p>TEDxUniversidadedeCoimbra<br>
-    Coimbra, cidade dos estudantes, do Mondego e da cultura. Estudantes que
-    fazem história. Mondego que se renova. Cultura que não dorme.<br>
-    Coimbra respira, sente e luta. Tem dentro de si a mudança e os estudantes
-    que a alimentam. Só estuda em Coimbra quem tem vontade de fazer mais, quem
-    não se conforma com o estabelecido, quem luta e reivindica os seus direitos,
-    quem nasce com o inconformismo a correr nas veias.<br>
-    É este o antídoto para a mudança, o motor para a denúncia das injustiças,
-    o oxigénio para a vida dos estudantes.<br>
-    Não é por pouco que nos diferenciamos há mais de 100 anos. Que somos
-    conhecidos pela nossa luta e forma de questionar o inquestionável. Que
-    esperam de nós o melhor da diferença. E é isso que entregamos.<br>
-    Aliamos os valores da clássica Universidade de Coimbra com as engrenagens
-    das mudanças do seculo XXI, espelhadas num evento cheio de ideias que
-    merecem ser partilhadas! <br>
-    Inconformismo é palavra de ordem e o tema do primeiro
-    TEDxUniversidadedeCoimbra, de estudantes para ti.</p>
+<header id="home">
+  <div class="intro">
+    <ul>
+      <p class="dia">13.04</p>
+      <p class="ano">2019</p>
+      <p class="coimbra">Coimbra</p>
+    </ul>
+    <div class="start-btn">
+      <a href="#get-started">Inscreve-te!</a>
+    </div>
+  </div>
+  <div class="inconformismo_grande">
+    <img src="{{url_for('static', filename='img/inconformismo.png')}}" width="677" height="367">
+  </div>
+  <div class="inconformismo_medio">
+    <img src="{{url_for('static', filename='img/inconformismo.png')}}" width="507,75" height="275,25">
+  </div>
+  <div class="inconformismo_pequeno">
+    <img src="{{url_for('static', filename='img/inconformismo.png')}}" width="384" height="208">
+  </div>
+</header>
 
-  <h2>Icone para comprar bilhete (link para o tickets?)</h2>
-  
+<section id="about">
+  <div class="texto">
+    <h3 class="primeiro"style="font-size:28px; color:#E62B1E; font-weight:bold">
+      TEDx
+      <span style="color:#FFFFFF ">Universidade de Coimbra</span>
+    </h3>
+    <h3 class="segundo"style="font-size:16px; color:#E62B1E; font-weight:bold">
+      TEDx
+      <span style="color:#FFFFFF ">Universidade de Coimbra</span>
+    </h3>
+    <p>Coimbra, cidade dos estudantes, do Mondego e da cultura. Estudantes que fazem história. Mondego que se renova. Cultura que não dorme.</p>
+    <p>Coimbra respira, sente e luta. Tem dentro de si a mudança e os estudantes que a alimentam. Só estuda em Coimbra quem tem vontade de fazer mais, quem não se conforma com o estabelecido, quem luta e reivindica os seus direitos, quem nasce com o inconformismo a correr nas veias.</p>
+    <p>É este o antídoto para a mudança, o motor para a denúncia das injustiças, o oxigénio para a vida dos estudantes.
+Não é por pouco que nos diferenciamos há mais de 100 anos. Que somos conhecidos pela nossa luta e forma de questionar o inquestionável. Que esperam de nós o melhor da diferença. E é isso que entregamos.
+Aliamos os valores da clássica Universidade de Coimbra com as engrenagens das mudanças do seculo XXI, espelhadas num evento cheio de ideias que merecem ser partilhadas!
+Inconformismo é palavra de ordem e o tema do primeiro TEDxUniversidadedeCoimbra, de estudantes para ti.</p>
+  </div>
+  </section>
+
+  <section id="news">
+    <div class="container_news1">
+      <div class="new_1">
+        <img src="{{url_for('static', filename='img/new1.jpg')}}" style="width:100%">
+        <h1>Os bilhetes para o TEDx Universidade de Coimbra começam a ser vendidos já na próxima semana!</h1>
+      </div>
+      <div class="new_2">
+        <img src="{{url_for('static', filename='img/new2.jpg')}}" style="width:100%">
+        <h2>Miguel Neiva é o mais recente orador confirmado, não percas!</h2>
+      </div>
+    </div>
+    <div class="container_news2">
+      <div class="{{url_for('static', filename='img/new3.jpg')}}">
+        <img src="img/new3.jpg" style="width:100%">
+        <h1>Os bilhetes para o TEDx Universidade de Coimbra começam a ser vendidos já na próxima semana!</h1>
+      </div>
+      <div class="new_4">
+        <img src="{{url_for('static', filename='img/new4.jpg')}}" style="width:100%">
+        <h2>Miguel Neiva é o mais recente orador confirmado, não percas!</h2>
+      </div>
+    </div>
+    <div class="container_news_phone">
+      <div class="new_2">
+        <img src="{{url_for('static', filename='img/new2.jpg')}}" style="width:100%">
+        <h2>Miguel Neiva é o mais recente orador confirmado, não percas!</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="short_info">
+    <div class="texto_info">
+      <p>“What is TEDx?<br>In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDx[name], where x = independently organized TED event. At our TEDx[name] event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.”</p>
+    </div>
+  </section>
+
 {% endblock %}
