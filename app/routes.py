@@ -5,6 +5,14 @@ from app.models import Orator, User
 from flask_login import current_user, login_user, logout_user, login_required
 from werkzeug.urls import url_parse
 
+@app.errorhandler(404)
+def not_found_error(error):
+    return render_template('errors/404.html', page='errors'), 404
+
+@app.errorhandler(500)
+def not_found_error(error):
+    return render_template('errors/500.html', page='errors'), 500
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -16,8 +24,7 @@ def tedx():
 
 @app.route('/vieworators')
 def vieworators():
-    orators = Orator.query.all()
-    return render_template('vieworators.html', orators=orators, page="oradores")
+    return render_template('vieworators.html', title="Oradores", page="oradores")
 
 
 # @app.route('/insertorator', methods=['GET', 'POST'])
@@ -59,16 +66,16 @@ def vieworators():
 
 @app.route('/program')
 def program():
-    return render_template('program.html')
+    return render_template('program.html', title="Programa", page="programa")
 
 @app.route('/partners')
 def partners():
-    return render_template('partners.html')
+    return render_template('partners.html', title='Parceiros', page='parceiros')
 
 @app.route('/team')
 def team():
-    return render_template('team.html')
+    return render_template('team.html', title="Equipa", page="equipa")
 
 @app.route('/tickets')
 def tickets():
-    return render_template('tickets.html')
+    return render_template('tickets.html', title='Bilhetes', page='bilhetes')
