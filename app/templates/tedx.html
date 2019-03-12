@@ -1,136 +1,47 @@
-<!DOCTYPE html>
-<html class="tedtedx"lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/tedtedx.css">
-    <link rel="icon" type="image/x-icon"href="img/favicon.ico">
-    <title>TED & TEDx</title>
-    <div class="line"></div>
-  </head>
+{% extends "base.html" %}
 
-  <body>
-    <div class='nav1'>
-      <nav>
-        <div class='nav'>
-          <div class='logo'>
-            <a href="index.html"><img src="img/uclogo.png" width="186" height="42"></a>
-          </div>
-          <ul class="nav_1">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="TED&TEDx.html">TED & TEDx</a></li>
-            <li><a href="Oradores.html">ORADORES</a></li>
-            <li><a href="Programa.html">PROGRAMA</a></li>
-            <li><a href="Parceiros.html">PARCEIROS</a></li>
-            <li><a href="Equipa.html">EQUIPA</a></li>
-            <li><a href="index.html">BILHETES</a></li>
-          </ul>
-          <div class="nav_2">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-              <a href="index.html">HOME</a>
-              <a href="TED&TEDx.html">TED & TEDx</a>
-              <a href="Oradores.html">ORADORES</a>
-              <a href="Programa.html">PROGRAMA</a>
-              <a href="Parceiros.html">PARCEIROS</a>
-              <a href="Equipa.html">EQUIPA</a>
-              <a href="index.html">BILHETES</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+{% block content %}
+<header id="tedtedx">
+  <div class="container_video">
+      <div class="play">
+        <a href="#video" class="video_open">
+            <img width="150" height="150"
+              src="{{url_for('static', filename='img/play.png')}}"
+              onmouseover="this.src='{{url_for('static', filename='img/playR.png')}}';"
+              onmouseout="this.src='{{url_for('static', filename='img/play.png')}}';" />
+        </a>
+      </div>
+    <div class="video" id="video">
+      <div class="video_content">
+        <a href="{{url_for('tedx')}}" class="video_close">&times;</a>
+        <iframe class="videoG"width="1001" height="560" src="https://www.youtube.com/embed/d0NHOpeczUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="videoM"width="500,5" height="280" src="https://www.youtube.com/embed/d0NHOpeczUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="videoP"width="333,6666666667" height="186,6666666667" src="https://www.youtube.com/embed/d0NHOpeczUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
   </div>
-
-  <header id="tedtedx">
-
-    <div class="container_video">
-        <div class="play">
-          <a href="#video" class="video_open"><img width="150" height="150" src='img/play.png' onmouseover="this.src='img/playR.png';" onmouseout="this.src='img/play.png';" /></a>
-        </div>
-      <div class="video" id="video">
-        <div class="video_content">
-          <a href="#tedtedx" class="video_close">&times;</a>
-          <iframe class="videoG"width="1001" height="560" src="https://www.youtube.com/embed/d0NHOpeczUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe class="videoM"width="500,5" height="280" src="https://www.youtube.com/embed/d0NHOpeczUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe class="videoP"width="333,6666666667" height="186,6666666667" src="https://www.youtube.com/embed/d0NHOpeczUU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-  </header>
+</header>
 
 <section id="compare">
-
   <div class="tabContainer">
       <div class="buttonContainer">
-          <button class="tedbtn" onclick="showPanel(0,'#000000')"><img src="img/ted.png" width="194" height="95"></button>
-          <button class="tedxbtn" onclick="showPanel(1,'#0000000')"><img src="img/tedxb.png" width="407" height="118"></button>
+          <button class="tedbtn" onclick="showPanel(0,'#000000')"><img src="{{url_for('static', filename='img/ted.png')}}" width="194" height="95"></button>
+          <button class="tedxbtn" onclick="showPanel(1,'#0000000')"><img src="{{url_for('static', filename='img/tedxb.png')}}" width="407" height="118"></button>
       </div>
       <div class="tabPanel" id="tab_1"><p>TED é uma organização sem fins lucrativos dedicada ao tema ‘Ideas Worth Spreading’ (ideias que vale a pena partilhar). Tendo iniciado na Califórnia há 30 anos como uma conferência de quatro dias, TED cresceu para apoiar esta missão através de várias iniciativas. As duas conferências anuais TED convidam pensadores e fazedores líderes mundiais a falar durante 18 minutos ou menos. A maioria destas apresentações são disponibilizadas gratuitamente online, em TED.com. Oradores TED incluem Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan e Daniel Kahneman. A conferência anual TED tem lugar na primavera em Vancouver, no Canadá, juntamente com o TEDActive, o evento com transmissão simultânea em Whistler. A conferência anual TEDGlobal teve lugar no Rio de Janeiro, no Brasil, em outubro de 2014. As iniciativas do TED nos media incluem TED.com, onde novas talks são disponibilizadas diariamente; o Open Translation Project, para legendagem e transcrição interativa e traduções de voluntários de todo o mundo; e a iniciativa educacional TED-Ed; TED criou o prémio anual TED Prize, onde indivíduos excecionais com um desejo para mudar o mundo podem receber ajuda para o poder transformar em ação; TEDx, que apoia indivíduos ou grupos na organização em todo o mundo de eventos locais semelhantes ao TED; e o programa TED Fellows, que ajuda inovadores de todo o mundo, capazes de mudar o mundo, para amplificar o impacto dos seus notáveis projetos e atividades.</p><p>Podes seguir TED no Twitter em <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> ou no Facebook <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a>.</p></div>
       <div class="tabPanel" id="tab_2"><p>x = evento organizado de forma independente No espírito das ideias que vale a pena partilhar, TEDx é um programa de eventos locais e auto-organizados que reúnem pessoas para partilhar uma experiência semelhante ao TED. Num evento TEDx, vídeos com TED Talks e oradores ao vivo são combinados para iniciar ligações e discussões profundas. Estes eventos auto-organizados são denominados TEDx, onde x = evento TED organizado de forma independente. A Conferência TED providencia apoio geral ao programa TEDx mas os eventos TEDx são auto-organizados. (Sujeito a certas regras e regulamentos.)</p></div>
-      <script src="myScript.js"></script>
+      <script src="{{url_for('static', filename='myScript.js')}}"></script>
     </div>
   </div>
-
   <div class="mobile">
     <div class="m_ted">
-      <img src="img/ted.png" width="146" height="71">
+      <img src="{{url_for('static', filename='img/ted.png')}}" width="146" height="71">
       <p>aTED é uma organização sem fins lucrativos dedicada ao tema ‘Ideas Worth Spreading’ (ideias que vale a pena partilhar). Tendo iniciado na Califórnia há 30 anos como uma conferência de quatro dias, TED cresceu para apoiar esta missão através de várias iniciativas. As duas conferências anuais TED convidam pensadores e fazedores líderes mundiais a falar durante 18 minutos ou menos. A maioria destas apresentações são disponibilizadas gratuitamente online, em TED.com. Oradores TED incluem Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan e Daniel Kahneman. A conferência anual TED tem lugar na primavera em Vancouver, no Canadá, juntamente com o TEDActive, o evento com transmissão simultânea em Whistler. A conferência anual TEDGlobal teve lugar no Rio de Janeiro, no Brasil, em outubro de 2014. As iniciativas do TED nos media incluem TED.com, onde novas talks são disponibilizadas diariamente; o Open Translation Project, para legendagem e transcrição interativa e traduções de voluntários de todo o mundo; e a iniciativa educacional TED-Ed; TED criou o prémio anual TED Prize, onde indivíduos excecionais com um desejo para mudar o mundo podem receber ajuda para o poder transformar em ação; TEDx, que apoia indivíduos ou grupos na organização em todo o mundo de eventos locais semelhantes ao TED; e o programa TED Fellows, que ajuda inovadores de todo o mundo, capazes de mudar o mundo, para amplificar o impacto dos seus notáveis projetos e atividades.</p><p>Podes seguir TED no Twitter em <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> ou no Facebook <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a>.</p>
     </div>
     <div class="m_tedx">
-      <img src="img/tedxB.png" width="354" height="102">
+      <img src="{{url_for('static', filename='img/tedxb.png')}}" width="354" height="102">
       <p>x = evento organizado de forma independente No espírito das ideias que vale a pena partilhar, TEDx é um programa de eventos locais e auto-organizados que reúnem pessoas para partilhar uma experiência semelhante ao TED. Num evento TEDx, vídeos com TED Talks e oradores ao vivo são combinados para iniciar ligações e discussões profundas. Estes eventos auto-organizados são denominados TEDx, onde x = evento TED organizado de forma independente. A Conferência TED providencia apoio geral ao programa TEDx mas os eventos TEDx são auto-organizados. (Sujeito a certas regras e regulamentos.)</p>
     </div>
   </div>
-
 </section>
 
-<section id="footer">
-  <div class="container_contact">
-    <div class="left">
-      <div class="social">
-        <a href="https://www.facebook.com/tedxuniversidadedecoimbra/"><img src="img/fb.png" height="30"></a>
-        <a href=""><img src="img/fk.png" height="30"></a>
-        <a href="https://www.instagram.com/tedxuniversidadedecoimbra/"><img src="img/ig.png" height="30"></a>
-        <a href="mailto:tedxuniversidadedecoimbra@nemaac.net"><img src="img/ml.png" height="30"></a>
-      </div>
-      <p>Pólo das Ciências da Saúde da Universidade de Coimbra<br>Unidade Central, Piso -1<br>Azinhaga de Santa Comba, Celas<br>3000-548 Coimbra</p>
-    </div>
-    <div class="right">
-        <img src="img/qrcode.png" width="50">
-      <p>This independent TEDx event is operated under license from TED.</p>
-    </div>
-  </div>
-
-  <div class="contact_mobile">
-    <div class="leftM">
-      <div class="social">
-        <a href="https://www.facebook.com/tedxuniversidadedecoimbra/"><img src="img/fb.png" height="30"></a>
-        <a href=""><img src="img/fk.png" height="30"></a>
-        <a href="https://www.instagram.com/tedxuniversidadedecoimbra/"><img src="img/ig.png" height="30"></a>
-        <a href="mailto:tedxuniversidadedecoimbra@nemaac.net"><img src="img/ml.png" height="30"></a>
-      </div>
-    </div>
-    <div class="midM">
-      <p>This independent TEDx event is operated under license from TED.</p>
-    </div>
-    <div class="rightM">
-      <img src="img/qrcode.png" width="50">
-    </div>
-  </div>
-
-  <div class="container_credit">
-    <p>© jeKnowledge 2019. ALL RIGHTS RESERVED</p>
-  </div>
-</section>
-    </body>
-</html>
+{% endblock %}

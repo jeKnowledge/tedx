@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="css/oradores.css">
- <link rel="icon" type="image/x-icon"href="img/favicon.ico">
- <title>Oradores</title>
- <style>
- </style>
-</head>
-<body>
-
-  <div class='nav1'>
-    <nav>
-      <div class='nav'>
-        <div class='logo'>
-          <a href="index.html"><img src="img/uclogo.png" width="186" height="42"></a>
-        </div>
-        <ul class="nav_1">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="TED&TEDx.html">TED & TEDx</a></li>
-          <li><a href="Oradores.html">ORADORES</a></li>
-          <li><a href="Programa.html">PROGRAMA</a></li>
-          <li><a href="Parceiros.html">PARCEIROS</a></li>
-          <li><a href="Equipa.html">EQUIPA</a></li>
-          <li><a href="index.html">BILHETES</a></li>
-        </ul>
-        <div class="nav_2">
-          <label for="toggle">&#9776;</label>
-          <input type="checkbox" id="toggle"/>
-          <div class="menu">
-            <a href="index.html">HOME</a>
-            <a href="TED&TEDx.html">TED & TEDx</a>
-            <a href="#Oradores.html">ORADORES</a>
-            <a href="Programa.html">PROGRAMA</a>
-            <a href="Parceiros.html">PARCEIROS</a>
-            <a href="Equipa.html">EQUIPA</a>
-            <a href="index.html">BILHETES</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-</div>
-
+{% extends "base.html" %}
+{% block content %}
 <section id="home_oradores">
   <h3>Oradores</h3>
 </section>
@@ -57,13 +13,13 @@
 
   <div class="container_oradores">
     <div class="foto">
-      <a href="#orador_1" class="orador_1open"><img width="250" height="250" src='img/rabaneaW.png' onmouseover="this.src='img/rabanea.png';" onmouseout="this.src='img/rabaneaW.png';" /></a>
+      <a href="#orador_1" class="orador_1open"><img width="250" height="250" src="{{ url_for('static', filename='img/rabaneaW.png')}}" onmouseover="this.src='{{ url_for('static', filename='img/rabanea.png')}}';" onmouseout="this.src='{{ url_for('static', filename='img/rabaneaW.png')}}';" /></a>
       <p class="nome">André Rabanea</p>
     </div>
  <div class="orador_1" id="orador_1">
     <div class="orador_1content">
       <a href="#oradores_list" class="orador_2close">&times;</a>
-      <img width="250" height="250" src='img/rabanea.png'/>
+      <img width="250" height="250" src="{{ url_for('static', filename='img/rabanea.png')}}"/>
       <h2 class="orador_1heading">André Rabanea</h2>
       <p class="description">Cofounder & Creative at Beta-i, Founder & Chairman at Torkecc, Cofounder Stuntsoccer, Founder BillytheGroup</p>
       <p class="orador_1paragraph">Começa a sua carreira de forma nada convencional aos 17 anos e, com apenas 21, lança-se no mercado em Lisboa. É fundador da Torke, que foi considerada a mais premiada agência de marketing de guerrilha do Mundo, com clientes como a FOX ou o McDonald's. É visto como um empreendedor em série e já teve mais de 10 empresas nas áreas da inovação e criatividade, espalhadas pelos 4 cantos do Mundo.</p>
@@ -72,13 +28,13 @@
 
 
  <div class="foto">
-   <a href="#orador_2" class="orador_2open"><img width="250" height="250" src='img/neivaW.png' onmouseover="this.src='img/neiva.png';" onmouseout="this.src='img/neivaW.png';" /></a>
+   <a href="#orador_2" class="orador_2open"><img width="250" height="250" src="{{ url_for('static', filename='img/neivaW.png')}}" onmouseover="this.src='{{ url_for('static', filename='img/neiva.png')}}';"; onmouseout="this.src='{{ url_for('static', filename='img/neivaW.png')}}';" /></a>
    <p class="nome">Miguel Neiva</p>
  </div>
  <div class="orador_2" id="orador_2">
     <div class="orador_2content">
       <a href="#oradores_list" class="orador_2close">&times;</a>
-      <img width="250" height="250" src='img/neiva.png'/>
+      <img width="250" height="250" src="{{ url_for('static', filename='img/neiva.png')}}"/>
       <h2 class="orador_2heading">Miguel Neiva</h2>
       <p class="description">Ashoka, ColorADD Color Identification System, Miguel Neiva Atelier Design, lda</p>
       <p class="orador_2paragraph">Utilidade e paixão são os seus alicerces. Mestre em Design e Marketing, pela Universidade do Minho e licenciado em Design, Comunicação Visual, foi Presidente da Associação Portuguesa de Design durante vários anos e o primeiro português a pertencer à americana Ashoka, organização global que identifica e investe em empreendedores sociais que fazem a diferença.
@@ -89,13 +45,13 @@ Hoje dedica-se exclusivamente a “dar cor à vida” e anda pelo mundo. Miguel 
  </div>
 
  <div class="foto">
-   <a href="#orador_3" class="orador_3open"><img width="250" height="250" src='img/laiaW.png' onmouseover="this.src='img/laia.png';" onmouseout="this.src='img/laiaW.png';" /></a>
+   <a href="#orador_3" class="orador_3open"><img width="250" height="250" src="{{ url_for('static', filename='img/laiaW.png')}}" onmouseover="this.src='{{ url_for('static', filename='img/laia.png')}}';" onmouseout="this.src='{{ url_for('static', filename='img/laiaW.png')}}';" /></a>
    <p class="nome">Francisca Laia</p>
  </div>
  <div class="orador_3" id="orador_3">
     <div class="orador_3content">
       <a href="#oradores_list" class="orador_3close">&times;</a>
-      <img width="250" height="250" src='img/laia.png'/>
+       <img width="250" height="250" src="{{ url_for('static', filename='img/laia.png')}}"/>
       <h2 class="orador_3heading">Francisca Laia</h2>
       <p class="description">Canoista da Seleção Nacional</p>
       <p class="orador_3paragraph">Médica que vale ouro, tomou contacto com o mundo da canoagem através do seu pai e iniciou o seu percurso em 2003 no Clube Desportivo “Os Patos” em Abrantes. Desde então tem vindo a colecionar medalhas e troféus tanto nacionais como mundiais. “Atleta Feminina do Ano” é já quase o seu nome do meio, e não é por menos, uma vez que marcou presença nos últimos Jogos Olímpicos em Agosto de 2016 no Rio de Janeiro. No entanto, e porque nem só o desporto alimenta esta mulher, em 2012 ingressou em Medicina na nossa aclamada Universidade de Coimbra, terminou o curso e é hoje prova viva que “If you can dream it, you can do it”. Francisca Laia é a terceira oradora que vos apresentamos e que decerto deixará a sua marca no primeiro TEDxUniversidadedeCoimbra.</p>
@@ -108,13 +64,13 @@ Hoje dedica-se exclusivamente a “dar cor à vida” e anda pelo mundo. Miguel 
 <div class="container_oradores">
 
   <div class="foto">
-    <a href="#orador_4" class="orador_4open"><img width="250" height="250" src='img/caronaW.png' onmouseover="this.src='img/carona.png';" onmouseout="this.src='img/caronaW.png';" /></a>
+    <a href="#orador_4" class="orador_4open"><img width="250" height="250" src="{{ url_for('static', filename='img/caronaW.png')}}" onmouseover="this.src='{{ url_for('static', filename='img/carona.png')}}';" onmouseout="this.src='{{ url_for('static', filename='img/caronaW.png')}}';" /></a>
     <p class="nome">Gustavo Carona</p>
   </div>
 <div class="orador_4" id="orador_4">
   <div class="orador_4content">
     <a href="#oradores_list" class="orador_4close">&times;</a>
-    <img width="250" height="250" src='img/carona.png'/>
+    <img width="250" height="250" src="{{ url_for('static', filename='img/carona.png')}}"/>
     <h2 class="orador_4heading">Gustavo Carona</h2>
     <p class="orador_4paragraph">Nasceu em Toronto em 1980, mas vive na cidade do Porto desde 1982, onde tem todas as suas raízes. Licenciou-se pela Faculdade de Medicina da Universidade do Porto em 2004. Em 2011 concluiu a especialidade de Anestesiologia, e em 2014 a Sub-Especialidade de Cuidados Intensivos, ambas no Hospital de São Joao.
 Em 2009 faz a sua 1ª Missão Humanitária em Moçambique, pelos Médicos pelo Mundo. No entanto, queria mais. Assim, ainda em 2009 torna-se parte dos Médicos sem Fronteiras. Desde então nunca mais parou, tendo trabalhado em Missões Humanitárias em países como o Congo, Afeganistão, Paquistão, Síria e República Central Africana.
@@ -127,13 +83,13 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 
 
 <div class="foto">
-  <a href="#orador_5" class="orador_5open"><img width="250" height="250" src='img/batistaW.png' onmouseover="this.src='img/batista.png';" onmouseout="this.src='img/batistaW.png';" /></a>
+  <a href="#orador_5" class="orador_5open"><img width="250" height="250" src="{{ url_for('static', filename='img/batistaW.png')}}" onmouseover="this.src='{{ url_for('static', filename='img/batista.png')}}';" onmouseout="this.src='{{ url_for('static', filename='img/batistaW.png')}}';" /></a>
   <p class="nome">André Batista</p>
 </div>
 <div class="orador_5" id="orador_5">
 <div class="orador_5content">
   <a href="#oradores_list" class="orador_5close">&times;</a>
-  <img width="250" height="250" src='img/batista.png'/>
+  <img width="250" height="250" src="{{ url_for('static', filename='img/batista.png')}}"/>
   <h2 class="orador_5heading">André Batista</h2>
   <p class="description">Cofounder & Creative at Beta-i, Founder & Chairman at Torkecc, Cofounder Stuntsoccer, Founder BillytheGroup</p>
   <p class="orador_5paragraph">Nasceu em Toronto em 1980, mas vive na cidade do Porto desde 1982, onde tem todas as suas raízes. Licenciou-se pela Faculdade de Medicina da Universidade do Porto em 2004. Em 2011 concluiu a especialidade de Anestesiologia, e em 2014 a Sub-Especialidade de Cuidados Intensivos, ambas no Hospital de São Joao.
@@ -145,7 +101,7 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 </div>
 
 <div class="foto">
-  <a href="#orador_6" class="orador_6open"><img width="250" height="250" src='img/nextW.png'/></a>
+  <a href="#orador_6" class="orador_6open"><img width="250" height="250" src="{{url_for('static', filename='img/nextW.png')}}"/></a>
   <p class="nome"></p>
 </div>
 </div>
@@ -158,7 +114,7 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 <div class="container_oradores">
 
   <div class="foto">
-    <a href="#orador_7" class="orador_7open"><img width="250" height="250" src='img/nextW.png'/></a>
+    <a href="#orador_7" class="orador_7open"><img width="250" height="250" src="{{url_for('static', filename='img/nextW.png')}}"/></a>
     <p class="nome"></p>
   </div>
 
@@ -166,7 +122,7 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 
 
   <div class="foto">
-    <a href="#orador_8" class="orador_8open"><img width="250" height="250" src='img/nextW.png'/></a>
+    <a href="#orador_8" class="orador_8open"><img width="250" height="250" src="{{url_for('static', filename='img/nextW.png')}}"/></a>
     <p class="nome"></p>
   </div>
 
@@ -174,7 +130,7 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 
 
   <div class="foto">
-    <a href="#orador_9" class="orador_9open"><img width="250" height="250" src='img/nextW.png'/></a>
+    <a href="#orador_9" class="orador_9open"><img width="250" height="250" src="{{url_for('static', filename='img/nextW.png')}}"/></a>
     <p class="nome"></p>
   </div>
 
@@ -205,50 +161,7 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
          <p class="modal__paragraph">Na cidade dos estudantes, falar de tradição é falar do Fado de Coimbra. Ao longo de gerações, ouvir cantar o amor, a liberdade, a mudança e a saudade fez parte do percurso de quem por cá passa. Porque também celebramos as tradições, temos a honra de apresentar o Grupo de Fado “Ad æternum” como nossos primeiros performers. Criado em outubro de 2015 por 6 estudantes da Universidade de Coimbra, com diferentes percursos musicais, este projeto inspira-se em grandes nomes da canção coimbrã, como Edmundo </p>
        </div>
     </div>
-
-  </div>
-
-</section>
-
-<section id="footer">
-  <div class="container_contact">
-    <div class="left">
-      <div class="social">
-        <a href="https://www.facebook.com/tedxuniversidadedecoimbra/"><img src="img/fb.png" height="30"></a>
-        <a href=""><img src="img/fk.png" height="30"></a>
-        <a href="https://www.instagram.com/tedxuniversidadedecoimbra/"><img src="img/ig.png" height="30"></a>
-        <a href="mailto:tedxuniversidadedecoimbra@nemaac.net"><img src="img/ml.png" height="30"></a>
-      </div>
-      <p>Pólo das Ciências da Saúde da Universidade de Coimbra<br>Unidade Central, Piso -1<br>Azinhaga de Santa Comba, Celas<br>3000-548 Coimbra</p>
-    </div>
-    <div class="right">
-        <img src="img/qrcode.png" width="50">
-      <p>This independent TEDx event is operated under license from TED.</p>
-    </div>
-  </div>
-
-  <div class="contact_mobile">
-    <div class="leftM">
-      <div class="social">
-        <a href="https://www.facebook.com/tedxuniversidadedecoimbra/"><img src="img/fb.png" height="30"></a>
-        <a href=""><img src="img/fk.png" height="30"></a>
-        <a href="https://www.instagram.com/tedxuniversidadedecoimbra/"><img src="img/ig.png" height="30"></a>
-        <a href="mailto:tedxuniversidadedecoimbra@nemaac.net"><img src="img/ml.png" height="30"></a>
-      </div>
-    </div>
-    <div class="midM">
-      <p>This independent TEDx event is operated under license from TED.</p>
-    </div>
-    <div class="rightM">
-      <img src="img/qrcode.png" width="50">
-    </div>
-  </div>
-
-  <div class="container_credit">
-    <p>© jeKnowledge 2019. ALL RIGHTS RESERVED</p>
   </div>
 </section>
 
-
-</body>
-</html>
+{% endblock %}
