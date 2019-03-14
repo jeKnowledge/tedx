@@ -140,7 +140,7 @@ label {
 
 /*--------------------------HOME---------------------*/
 #home_oradores {
-  height: 800px;
+  height: 400px;
   background-image: url('../img/bckgted.jpg');
   background-position: center;
   background-size: cover;
@@ -503,12 +503,114 @@ margin: 2em;
 
 
 /*--------------------------ORADOR_6---------------------*/
+.orador_6{
+ background-color: rgba(0,0,0);
+ width:100%;
+ height: 150vh;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+ margin-top: 800px;
+ padding-top: 100px;
+ color: #ffffffff;
+}
+.orador_6content{
+ width: 75%;
+ height: 65%;
+ background-color: #000000;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -150px;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#orador_6:target{
+ opacity: 1;
+ visibility: visible;
+}
+#orador_6:target .orador_6content{
+ opacity: 1;
+ visibility: visible;
+}
+.orador_6close{
+ color: #363636;
+ font-size: 2em;
+ position: absolute;
+ top: .5em;
+ right: 1em;
+}
+.orador_6heading{
+ color: dodgerblue;
+ margin-bottom: 1em;
+}
+.orador_6paragraph{
+ line-height: 1.5em;
+}
 .orador_6open{
 display: inline-block;
 margin: 2em;
 }
 
 /*--------------------------ORADOR_7---------------------*/
+.orador_7{
+ background-color: rgba(0,0,0);
+ width:100%;
+ height: 150vh;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+ margin-top: 800px;
+ padding-top: 100px;
+ color: #ffffffff;
+}
+.orador_7content{
+ width: 75%;
+ height: 65%;
+ background-color: #000000;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -150px;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#orador_7:target{
+ opacity: 1;
+ visibility: visible;
+}
+#orador_7:target .orador_7content{
+ opacity: 1;
+ visibility: visible;
+}
+.orador_7close{
+ color: #363636;
+ font-size: 2em;
+ position: absolute;
+ top: .5em;
+ right: 1em;
+}
+.orador_7heading{
+ color: dodgerblue;
+ margin-bottom: 1em;
+}
+.orador_7paragraph{
+ line-height: 1.5em;
+}
 .orador_7open{
 display: inline-block;
 margin: 2em;

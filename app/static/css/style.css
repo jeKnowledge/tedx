@@ -51,7 +51,7 @@ li::before{
   position:static;
   width: 0%;
   transition: all ease-in-out 250ms;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 li:hover::before{
   width: 100%;
