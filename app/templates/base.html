@@ -9,12 +9,14 @@
 
       {% if page == 'home'%}
       <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
       <link rel="icon" type="image/x-icon"href="{{url_for('static', filename='img/favicon.ico')}}">
 
       {% if page == "tedtedx" %}
       <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
       <link rel="stylesheet" href="{{url_for('static', filename='css/tedtedx.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <div class="line"></div>
       {% endif %}
 
@@ -26,18 +28,22 @@
 
       {% if page == "programa" %}
       <link rel="stylesheet" href="{{url_for('static', filename='css/programa.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
 
       {% if page == "parceiros" %}
       <link rel="stylesheet" href="{{url_for('static', filename='css/parceiros.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
 
       {% if page == "equipa" %}
       <link rel="stylesheet" href="{{url_for('static', filename='css/equipa.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
 
       {% if page == "bilhetes" or page == "errors" %}
       <link rel="stylesheet" href="{{url_for('static', filename='css/programa.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
     </head>
     <body>
@@ -108,10 +114,10 @@
         <div class="contact_mobile">
           <div class="leftM">
             <div class="social">
-              <a href="https://www.facebook.com/tedxuniversidadedecoimbra/"><img src="{{url_for('static', filename='img/fb.png')}}" height="30"></a>
-              <a href=""><img src="{{url_for('static', filename='img/fk.png')}}" height="30"></a>
-              <a href="https://www.instagram.com/tedxuniversidadedecoimbra/"><img src="{{url_for('static', filename='img/ig.png')}}" height="30"></a>
-              <a href="mailto:tedxuniversidadedecoimbra@nemaac.net"><img src="{{url_for('static', filename='img/ml.png')}}" height="30"></a>
+              <a href="https://www.facebook.com/tedxuniversidadedecoimbra/"><img src="{{url_for('static', filename='img/fb.png')}}" height="25"></a>
+              <a href=""><img src="{{url_for('static', filename='img/fk.png')}}" height="25"></a>
+              <a href="https://www.instagram.com/tedxuniversidadedecoimbra/"><img src="{{url_for('static', filename='img/ig.png')}}" height="25"></a>
+              <a href="mailto:tedxuniversidadedecoimbra@nemaac.net"><img src="{{url_for('static', filename='img/ml.png')}}" height="25"></a>
             </div>
           </div>
           <div class="midM">

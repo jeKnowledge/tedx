@@ -160,6 +160,19 @@ label {
   color: #ffffff;
   font-size: 2em;
 }
+@media screen and (max-width: 840px) {
+  #prog_home {
+    height: 540px;
+  }
+  #prog_home h3 {
+    padding-top: 80px;
+    font-size: 2em;
+  }
+  #prog_home p {
+    padding-top: 180px;
+    font-size: 1em;
+  }
+}
 
 
 
@@ -242,5 +255,13 @@ label {
   }
   .right img {
     padding-right: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rightM {
+    display: none;
+  }
+  .contact_mobile p {
+      padding: 8px 10px 0 50px;
   }
 }

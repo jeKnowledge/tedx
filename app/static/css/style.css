@@ -213,6 +213,17 @@ label {
     padding-top: 60px;
   }
 }
+@media screen and (max-width: 320px) {
+  #home {
+    height: 550px;
+  }
+  #home ul {
+    padding-top: 60px;
+  }
+  #home .inconformismo_pequeno {
+    padding-top: 40px;
+  }
+}
 
 
 /*----------------------ABOUT------------------------*/
@@ -251,6 +262,13 @@ label {
       padding-top: 50px;
     }
   }
+@media screen and (max-width: 320px) {
+  #about .text {
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 /*----------------------NEWS------------------------*/
 #news {
@@ -300,9 +318,9 @@ label {
 @media screen and (max-width: 640px) {
   .news_text {
     top: 0;
+    font-size: 12px;
   }
 }
-
 
 
 /*-----------------------INFO------------------------*/
@@ -401,5 +419,13 @@ label {
   }
   .right img {
     padding-right: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rightM {
+    display: none;
+  }
+  .contact_mobile p {
+      padding: 8px 10px 0 50px;
   }
 }

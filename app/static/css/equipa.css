@@ -295,3 +295,11 @@ label {
     padding-right: 60px;
   }
 }
+@media screen and (max-width: 400px) {
+  .rightM {
+    display: none;
+  }
+  .contact_mobile p {
+      padding: 8px 10px 0 50px;
+  }
+}

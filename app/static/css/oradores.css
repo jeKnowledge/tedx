@@ -171,7 +171,11 @@ label {
   font-size: 12px;
   font-weight: lighter;
 }
-
+@media screen and (max-width: 840px) {
+  #home_oradores h3{
+    font-size: 2em;
+  }
+}
 
 /*--------------------------ORADORES---------------------*/
 
@@ -204,7 +208,7 @@ label {
 /*--------------------------ORADOREES_MOBILE---------------------*/
 @media screen and (max-width: 840px) {
   #oradores_list {
-    height: 3000px;
+    height: 2800px;
   }
   .container_oradores {
     display:block;
@@ -225,7 +229,7 @@ label {
  z-index: 10;
  opacity: 0;
  visibility: hidden;
- margin-top: 800px;
+ margin-top: 400px;
  transition: all .5s;
 }
 .orador_1content{
@@ -266,6 +270,11 @@ label {
 display: inline-block;
 margin: 2em;
 }
+@media screen and (max-width: 840px) {
+  .orador_1{
+    padding-top: 180px;
+  }
+}
 
 
 
@@ -273,23 +282,21 @@ margin: 2em;
 .orador_2{
  background-color: #000000;
  width:100%;
- height: 150vh;
+ height: 100vh;
  position: absolute;
  top: 0;
  left: 0;
  z-index: 10;
  opacity: 0;
  visibility: hidden;
- margin-top: 800px;
+ margin-top: 400px;
  transition: all .5s;
 }
 .orador_2content{
-  background-color: #000000;
  width: 75%;
  height: 500px;
  position: absolute;
  top: 50%;
- margin-top: -200px;
  left: 50%;
  transform: translate(-50%, -50%);
  padding: 2em;
@@ -324,6 +331,14 @@ color: #ffffff;
 display: inline-block;
 margin: 2em;
 }
+@media screen and (max-width: 840px) {
+  .orador_2{
+    padding-top: 500px;
+  }
+  .orador_2content {
+    top: 30%;
+  }
+}
 
 
 
@@ -339,7 +354,7 @@ margin: 2em;
  opacity: 0;
  visibility: hidden;
  transition: all .5s;
- margin-top: 800px;
+ margin-top: 400px;
  color: #ffffff;
 }
 .orador_3content{
@@ -382,6 +397,11 @@ margin: 2em;
 display: inline-block;
 margin: 2em;
 }
+@media screen and (max-width: 840px) {
+  .orador_3{
+    padding-top: 340px;
+  }
+}
 
 
 /*--------------------------ORADOR_4---------------------*/
@@ -396,7 +416,7 @@ margin: 2em;
  opacity: 0;
  visibility: hidden;
  transition: all .5s;
- margin-top: 800px;
+ margin-top: 400px;
  padding-top: 100px;
  color: #ffffffff;
 }
@@ -440,6 +460,11 @@ margin: 2em;
 display: inline-block;
 margin: 2em;
 }
+@media screen and (max-width: 840px) {
+  .orador_4{
+    padding-top: 520px;
+  }
+}
 
 
 /*--------------------------ORADOR_5---------------------*/
@@ -454,7 +479,7 @@ margin: 2em;
  opacity: 0;
  visibility: hidden;
  transition: all .5s;
- margin-top: 800px;
+ margin-top: 500px;
  padding-top: 100px;
  color: #ffffffff;
 }
@@ -498,6 +523,11 @@ margin: 2em;
 display: inline-block;
 margin: 2em;
 }
+@media screen and (max-width: 840px) {
+  .orador_5{
+    padding-top: 650px;
+  }
+}
 
 
 
@@ -506,7 +536,7 @@ margin: 2em;
 .orador_6{
  background-color: rgba(0,0,0);
  width:100%;
- height: 150vh;
+ height: 100vh;
  position: absolute;
  top: 0;
  left: 0;
@@ -514,7 +544,7 @@ margin: 2em;
  opacity: 0;
  visibility: hidden;
  transition: all .5s;
- margin-top: 800px;
+ margin-top: 500px;
  padding-top: 100px;
  color: #ffffffff;
 }
@@ -558,12 +588,18 @@ margin: 2em;
 display: inline-block;
 margin: 2em;
 }
+@media screen and (max-width: 840px) {
+  .orador_6{
+    padding-top: 750px;
+  }
+}
+
 
 /*--------------------------ORADOR_7---------------------*/
 .orador_7{
  background-color: rgba(0,0,0);
  width:100%;
- height: 150vh;
+ height: 100vh;
  position: absolute;
  top: 0;
  left: 0;
@@ -571,7 +607,7 @@ margin: 2em;
  opacity: 0;
  visibility: hidden;
  transition: all .5s;
- margin-top: 800px;
+ margin-top: 500px;
  padding-top: 100px;
  color: #ffffffff;
 }
@@ -614,6 +650,11 @@ margin: 2em;
 .orador_7open{
 display: inline-block;
 margin: 2em;
+}
+@media screen and (max-width: 840px) {
+  .orador_7{
+    padding-top: 750px;
+  }
 }
 
 
@@ -658,6 +699,11 @@ margin: 2em;
   background-color: #E62B1E;
   margin-top: 5px;
 }
+@media screen and (max-width: 840px) {
+  #performances h3{
+    font-size: 2em;
+  }
+}
 /*-------------------------------------------*/
 a:link,
 a:visited{
@@ -670,6 +716,7 @@ a:visited{
  position: absolute;
  text-align: center;
  top: 1400px;
+ padding-top: 100px;
  left: 0;
  z-index: 10;
  opacity: 0;
@@ -723,7 +770,8 @@ color: #E62B1E;
 }
 @media screen and (max-width: 840px) {
   .modal{
-    top: 3800px;
+    top: 3400px;
+    padding-top: 200px;
   }
   .modal__close{
     top: 1em;
@@ -812,5 +860,13 @@ color: #E62B1E;
   }
   .right img {
     padding-right: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rightM {
+    display: none;
+  }
+  .contact_mobile p {
+      padding: 8px 10px 0 50px;
   }
 }
