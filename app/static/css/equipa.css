@@ -133,6 +133,36 @@ label {
 
 /*-----------------------HOME------------------------*/
 #team_home {
+  height: 800px;
+  background-image: url('../img/background.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#team_home h3 {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 3em;
+  color: #ffffff;
+}
+#team_home h3::after{
+  content:'';
+  display: flex;
+  height: 3px;
+  text-align: center;
+  width: 100%;
+  background-color: #E62B1E;
+  margin-top: 5px;
+}
+#team_home p {
+  padding-top: 250px;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+/*#team_home {
   height: 700px;
   background-image: url('../img/team.jpg');
   background-position: center;
@@ -156,6 +186,8 @@ label {
   background-color: #E62B1E;
   margin-top: 5px;
 }
+*/
+
 
 /*-----------------------INFO------------------------*/
 #info {
