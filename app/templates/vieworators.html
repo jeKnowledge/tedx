@@ -157,8 +157,18 @@ Portador de histórias que nos farão certamente parar um pouco para pensar, Gus
 
 
   <div class="foto">
-    <a href="#orador_9" class="orador_9open"><img width="250" height="250" src="{{url_for('static', filename='img/nextW.png')}}"/></a>
-    <p class="nome"></p>
+    <a href="#orador_9" class="orador_9open"><img width="250" height="250" src="{{ url_for('static', filename='img/profW.png')}}" onmouseover="this.src='{{ url_for('static', filename='img/prof.png')}}';" onmouseout="this.src='{{ url_for('static', filename='img/profW.png')}}';" /></a>
+    <p class="nome">Prof. José Pinto Gouveia</p>
+  </div>
+  <div class="orador_9" id="orador_9">
+  <div class="orador_9content">
+    <a href="#oradores_list" class="orador_9close">&times;</a>
+    <img width="250" height="250" src="{{ url_for('static', filename='img/prof.png')}}"/>
+    <h2 class="orador_9heading">Prof. José Pinto Gouveia</h2>
+    <p class="description"></p>
+    <p class="orador_9paragraph">José Augusto da Veiga Pinto de Gouveia é licenciado pela Universidade de Coimbra, nomeadamente pela Faculdade de Psicologia, tendo feito o seu doutoramento em Psicologia Clínica, e pela Faculdade de Medicina, sendo especialista na área de Psiquiatria. Conta com um longo currículo no qual constam já 46 anos de prática clínica. Publicou 130 artigos em revistas especializadas e 67 trabalhos em actas de eventos, 102 itens de produção técnica, e possui ainda 12 capítulos de livros e 2 livros publicados. Participou em 5 eventos no estrangeiro e 18 em Portugal. E já recebeu 2 prémios e/ou homenagens. Tendo estado sempre ligado à vertente mental e comportamental hoje, para além das funções como Médico e Professor, é ainda Presidente da Associação Portuguesa para o Mindfulness.
+Dia 13 vai estar connosco, e arriscamo-nos a dizer que se não sabes o que é o Mindfulness e quais os seus benefícios, vais ficar a saber!</p>
+  </div>
   </div>
 
 </div>

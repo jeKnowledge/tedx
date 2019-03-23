@@ -721,9 +721,65 @@ margin: 2em;
 }
 
 /*--------------------------ORADOR_9---------------------*/
+.orador_9{
+ background-color: rgba(0,0,0);
+ width:100%;
+ height: 100vh;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+ margin-top: 500px;
+ padding-top: 100px;
+ color: #ffffffff;
+}
+.orador_9content{
+ width: 75%;
+ height: 65%;
+ background-color: #000000;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -150px;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#orador_9:target{
+ opacity: 1;
+ visibility: visible;
+}
+#orador_9:target .orador_9content{
+ opacity: 1;
+ visibility: visible;
+}
+.orador_9close{
+ color: #363636;
+ font-size: 2em;
+ position: absolute;
+ top: .5em;
+ right: 1em;
+}
+.orador_9heading{
+ color: dodgerblue;
+ margin-bottom: 1em;
+}
+.orador_9paragraph{
+ line-height: 1.5em;
+}
 .orador_9open{
 display: inline-block;
 margin: 2em;
+}
+@media screen and (max-width: 840px) {
+  .orador_9 {
+    padding-top: 750px;
+  }
 }
 
 
