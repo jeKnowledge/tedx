@@ -882,8 +882,9 @@ color: #E62B1E;
 }
 @media screen and (max-width: 840px) {
   .modal{
-    top: 3400px;
+    top: 3200px;
     padding-top: 200px;
+    height: 73vh;
   }
   .modal__close{
     top: 1em;
@@ -892,6 +893,99 @@ color: #E62B1E;
     padding-top: 80px;
   }
 }
+/*--------------------------PERFORMANCES2---------------------*/
+#performances2 {
+  height: 700px;
+  background-image: url('../img/defrosted.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*-------------------------------------------*/
+a:link,
+a:visited{
+ text-decoration: none;
+}
+.modal2{
+ background-color: rgba(0,0,0, .8);
+ width:100%;
+ height: 80vh;
+ position: absolute;
+ text-align: center;
+ top: 2240px;
+ padding-top: 100px;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+.modal2__content{
+ width: 75%;
+ height: 65%;
+ background-color: transparent;
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#modal2:target{
+ opacity: 1;
+ visibility: visible;
+}
+#modal2:target .modal2__content{
+ opacity: 1;
+ visibility: visible;
+}
+.modal2__close{
+ color: #E62B1E;
+ font-size: 2em;
+ position: absolute;
+ top: 5em;
+ right: 5em;
+}
+.modal2__paragraph{
+  color: #ffffff;
+  padding-top: 250px;
+ line-height: 1.5em;
+}
+.modal2-open {
+color: #E62B1E;
+}
+.modal2-open p{
+  text-align: center;
+  padding-top: 5px;
+}
+.perf_container2 h1 {
+  font-size: 2em;
+  color: #ffffff;
+  padding-top: 420px;
+}
+@media screen and (max-width: 840px) {
+  .modal2{
+    top: 3930px;
+    padding-top: 200px;
+    height: 60vh;
+  }
+  .modal2__close{
+    top: 1em;
+  }
+  .modal2__paragraph {
+    padding-top: 80px;
+  }
+  .modal2__content{
+    margin-top: 50px;
+  }
+}
+
+
+
 
 
 /*-----------------------FOOTER------------------------*/
