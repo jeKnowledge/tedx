@@ -180,7 +180,7 @@ label {
 /*--------------------------ORADORES---------------------*/
 
 #oradores_list {
-  height: 1120px;
+  height: 1400px;
 }
 .container_oradores {
   text-align: center;
@@ -208,7 +208,7 @@ label {
 /*--------------------------ORADOREES_MOBILE---------------------*/
 @media screen and (max-width: 840px) {
   #oradores_list {
-    height: 2800px;
+    height: 3100px;
   }
   .container_oradores {
     display:block;
@@ -782,6 +782,68 @@ margin: 2em;
   }
 }
 
+
+/*--------------------------ORADOR_10---------------------*/
+.orador_10{
+ background-color: rgba(0,0,0);
+ width:100%;
+ height: 180vh;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+ margin-top: 500px;
+ padding-top: 100px;
+ color: #ffffffff;
+}
+.orador_10content{
+ width: 75%;
+ height: 65%;
+ background-color: #000000;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -120px;
+ transform: translate(-50%, -50%);
+ padding: 2em;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .5s;
+}
+#orador_10:target{
+ opacity: 1;
+ visibility: visible;
+}
+#orador_10:target .orador_10content{
+ opacity: 1;
+ visibility: visible;
+}
+.orador_10close{
+ color: #363636;
+ font-size: 2em;
+ position: absolute;
+ top: .5em;
+ right: 1em;
+}
+.orador_10heading{
+ color: dodgerblue;
+ margin-bottom: 1em;
+}
+.orador_10paragraph{
+ line-height: 1.5em;
+}
+.orador_10open{
+display: inline-block;
+margin: 2em;
+}
+@media screen and (max-width: 840px) {
+  .orador_9 {
+    padding-top: 800px;
+  }
+}
 
 
 
