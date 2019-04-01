@@ -132,45 +132,30 @@ label {
 
 /*-----------------------HOME------------------------*/
 #prog_home {
-  height: 800px;
-  background-image: url('../img/background.jpg');
+  height: 1400px;
+  background-color: #000000;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#prog_home h3 {
-  padding-top: 150px;
-  text-align: center;
-  font-size: 3em;
-  color: #ffffff;
+.prog_def{
+  padding-top: 120px;
 }
-#prog_home h3::after{
-  content:'';
-  display: flex;
-  height: 3px;
-  text-align: center;
-  width: 100%;
-  background-color: #E62B1E;
-  margin-top: 5px;
-}
-#prog_home p {
-  padding-top: 250px;
-  color: #ffffff;
-  font-size: 2em;
+.prog_med {
+  padding-top: 120px;
+  display: none;
 }
 @media screen and (max-width: 840px) {
   #prog_home {
-    height: 540px;
+    height: 800px;
   }
-  #prog_home h3 {
-    padding-top: 80px;
-    font-size: 2em;
+  .prog_med {
+    display: flex;
   }
-  #prog_home p {
-    padding-top: 180px;
-    font-size: 1em;
+  .prog_def {
+    display: none;
   }
 }
 
