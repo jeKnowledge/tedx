@@ -4,7 +4,7 @@
       {% if title %}
       <title>{{ title }}</title>
       {% else %}
-      <title>TedX Coimbra</title>
+      <title>TEDx Coimbra</title>
       {% endif %}
 
       {% if page == 'home'%}
@@ -46,6 +46,12 @@
       <link rel="stylesheet" href="{{url_for('static', filename='css/bilhetes.css')}}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
+
+      {% if page == "anemia" %}
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/anemia.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% endif %}
     </head>
     <body>
       <nav>
@@ -72,7 +78,7 @@
               <a href="{{url_for('vieworators')}}">ORADORES</a>
               <a href="{{url_for('program')}}">PROGRAMA</a>
               <a href="{{url_for('partners')}}">PARCEIROS</a>
-              <a href="https://www.facebook.com/tedxuniversidadedecoimbra/">EQUIPA</a>
+              <a href="{{url_for('team')}}">EQUIPA</a>
               <a href="{{url_for('tickets')}}">BILHETES</a>
             </div>
           </div>
