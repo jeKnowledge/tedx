@@ -98,7 +98,7 @@ label {
   display: none;
 
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 880px) {
   .nav_1 {
     display: none;
   }
