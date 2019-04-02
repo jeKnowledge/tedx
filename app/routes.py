@@ -79,3 +79,7 @@ def team():
 @app.route('/tickets')
 def tickets():
     return render_template('tickets.html', title='Bilhetes', page='bilhetes')
+
+@app.route('/anemia')
+def anemia():
+    return render_template('anemia.html', title='Anemia', page='anemia')

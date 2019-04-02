@@ -27,7 +27,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       {% endif %}
 
-      {% if page == "programa" %}
+      {% if page == "programa"%}
       <link rel="stylesheet" href="{{url_for('static', filename='css/programa.css')}}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
@@ -42,7 +42,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
 
-      {% if page == "bilhetes" or page == "errors" %}
+      {% if page == "bilhetes"%}
       <link rel="stylesheet" href="{{url_for('static', filename='css/bilhetes.css')}}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
@@ -52,6 +52,13 @@
       <link rel="stylesheet" href="{{url_for('static', filename='css/anemia.css')}}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endif %}
+
+      {% if page == "errors" %}
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/errors.css')}}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% endif %}
+
     </head>
     <body>
       <nav>
@@ -65,6 +72,7 @@
             <li><a href="{{url_for('tedx')}}">TED & TEDx</a></li>
             <li><a href="{{url_for('vieworators')}}">ORADORES</a></li>
             <li><a href="{{url_for('program')}}">PROGRAMA</a></li>
+            <li><a href="{{url_for('anemia')}}">ANEMIA</a></li>
             <li><a href="{{url_for('partners')}}">PARCEIROS</a></li>
             <li><a href="{{url_for('team')}}">EQUIPA</a></li>
             <li><a href="{{url_for('tickets')}}">BILHETES</a></li>
@@ -77,6 +85,7 @@
               <a href="{{url_for('tedx')}}">TED & TEDx</a>
               <a href="{{url_for('vieworators')}}">ORADORES</a>
               <a href="{{url_for('program')}}">PROGRAMA</a>
+              <a href="{{url_for('anemia')}}">ANEMIA</a>
               <a href="{{url_for('partners')}}">PARCEIROS</a>
               <a href="{{url_for('team')}}">EQUIPA</a>
               <a href="{{url_for('tickets')}}">BILHETES</a>
@@ -90,6 +99,7 @@
         <a href="{{url_for('tedx')}}">TED & TEDx</a>
         <a href="{{url_for('vieworators')}}">Oradores & Performances</a>
         <a href="{{url_for('program')}}">Programa</a>
+        <a href="{{url_for('anemia')}}">Anemia</a>
         <a href="{{url_for('partners')}}">Parceiros</a>
         <a href="{{url_for('team')}}">Comissão Organizadora</a>
         <a href="{{url_for('tickets')}}">Bilhetes</a>
