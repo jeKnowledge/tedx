@@ -147,6 +147,10 @@ label {
   padding-top: 120px;
   display: none;
 }
+.prog_small{
+  padding-top: 80px;
+  display: none;
+}
 @media screen and (max-width: 840px) {
   #prog_home {
     height: 800px;
@@ -156,6 +160,17 @@ label {
   }
   .prog_def {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #prog_home {
+    height: 500px;
+  }
+  .prog_med {
+    display: none;
+  }
+  .prog_small{
+    display: flex;
   }
 }
 
