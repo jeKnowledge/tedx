@@ -1,33 +1,86 @@
 {% extends "base.html" %}
 {% block content %}
 <header id="part_home">
-  <h3>Parceiros</h3>
+  <h2>Parceiros</h2>
 </header>
+<body>
+      <div class="scroll_h">
+
+        <h3 class="pb">POWERED BY</h3>
+        <div class="c-my-flooper js-flooper2">
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://nemaac.net/" target="_blank"><img src="{{ url_for('static', filename='img/nem.png')}}" alt="logo" id="nem"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://www.facebook.com/academicastartuc/" target="_blank"><img src="{{ url_for('static', filename='img/asuc.png')}}" alt="logo" id="asuc"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://www.facebook.com/santanderuniversidadesportugal/" target="_blank"><img src="{{ url_for('static', filename='img/sant.jpg')}}" alt="logo" id="santander"></a>
+            </div>
+        </div>
+
+        <h3 class="silver">SILVER</h3>
+        <a href="https://www.saudecuf.pt/" target="_blank"><img src="{{ url_for('static', filename='img/cuf.jpg')}}" alt="logo" id="cuf"></a>
 
 
+        <h3 class="tec">TECNOLÓGICOS</h3>
+        <div class="c-my-flooper js-flooper3">
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://www.facebook.com/jeknowledge/" target="_blank"><img src="{{ url_for('static', filename='img/jek.png')}}" alt="logo" id="jek"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://www.sleeklab.com/" target="_blank"><img src="{{ url_for('static', filename='img/sleek.png')}}" alt="logo" id="sleek"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://slidedog.com/" target="_blank"><img src="{{ url_for('static', filename='img/sdog.png')}}" alt="logo" id="sdog"></a>
+            </div>
+        </div>
 
-<section id=partners>
+        <h3 class="log">LOGÍSTICOS</h3>
+        <div class="c-my-flooper js-flooper4">
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://singularprint.pt/" target="_blank"><img src="{{ url_for('static', filename='img/singular.png')}}" alt="logo" id="singular"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://shoyce.pt/" target="_blank"><img src="{{ url_for('static', filename='img/shoyce.png')}}" alt="logo" id="shoyce"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://fruut.pt/" target="_blank"><img src="{{ url_for('static', filename='img/fruut.png')}}" alt="logo" id="fruut"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://www.illy.com/wps/wcm/connect/pt/home" target="_blank"><img src="{{ url_for('static', filename='img/illy.jpg')}}" alt="logo" id="illy"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://www.facebook.com/green.coimbra/" target="_blank"><img src="{{ url_for('static', filename='img/green.jpg')}}" alt="logo" id="green"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://izidoro.pt/" target="_blank"><img src="{{ url_for('static', filename='img/izidoro.png')}}" alt="logo" id="izidoro"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="https://www.diatosta.pt/pt/" target="_blank"><img src="{{ url_for('static', filename='img/diatosta.png')}}" alt="logo" id="diatosta"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://www.deltacafes.pt/" target="_blank"><img src="{{ url_for('static', filename='img/delta.png')}}" alt="logo" id="delta"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://www.deltacafes.pt/" target="_blank"><img src="{{ url_for('static', filename='img/glood.jpg')}}" alt="logo" id="glood"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://www.deltacafes.pt/" target="_blank"><img src="{{ url_for('static', filename='img/zonapro.jpg')}}" alt="logo" id="zonapro"></a>
+            </div>
+            <div class="c-my-flooper__el js-flooper-item">
+              <a href="http://www.deltacafes.pt/" target="_blank"><img src="{{ url_for('static', filename='img/turismo.png')}}" alt="logo" id="turismo"></a>
+            </div>
+        </div>
 
-  <div class="part_container">
+        <h3>PARCEIRO INSTITUCIONAL</h3>
+        <a href="https://www.uc.pt/" target="_blank"><img src="{{ url_for('static', filename='img/uc.png')}}" alt="logo" id="uc"></a>
 
-    <div class="part_1">
-      <a href="https://nemaac.net/"><img class="pc" src="{{url_for('static', filename='img/nem.png')}}" width="500"></a>
-      <a href="https://nemaac.net/"><img class="mobile"src="{{url_for('static', filename='img/nem.png')}}" width="250"></a>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-    </div>
+      </div>
 
-    <div class="part_2">
-      <a href="https://www.facebook.com/academicastartuc/"><img class="pc"src="{{url_for('static', filename='img/asuc.png')}}" width="600"></a>
-      <a href="https://www.facebook.com/academicastartuc/"><img class="mobile"src="{{url_for('static', filename='img/asuc.png')}}" width="300"></a>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-    </div>
-
-    <div class="part_3">
-      <a href="https://www.facebook.com/jeknowledge/"><img class="pc"src="{{url_for('static', filename='img/jek.svg')}}" width="600"></a>
-      <a href="https://www.facebook.com/jeknowledge/"><img class="mobile"src="{{url_for('static', filename='img/jek.svg')}}" width="300"></a>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-    </div>
-
-  </div>
-</section>
+    <script src="https://unpkg.com/flooper"></script>
+    <script src="{{ url_for('static', filename='script/flooper2.js')}}"></script>
+    <script src="{{ url_for('static', filename='script/flooper3.js')}}"></script>
+    <script src="{{ url_for('static', filename='script/flooper4.js')}}"></script>
+  </body>
 {% endblock %}
