@@ -132,7 +132,7 @@ label {
 
 /*-----------------------HOME------------------------*/
 #prog_home {
-  height: 1400px;
+  height: 1200px;
   background-color: #000000;
   background-position: center;
   background-size: cover;
@@ -140,20 +140,20 @@ label {
   flex-direction: column;
   align-items: center;
 }
-.prog_def{
-  padding-top: 120px;
+.prog_def {
+  margin-top: -50px;
 }
 .prog_med {
-  padding-top: 120px;
+  margin-top: -20px;
   display: none;
 }
 .prog_small{
-  padding-top: 80px;
+  padding-top: 40px;
   display: none;
 }
 @media screen and (max-width: 840px) {
   #prog_home {
-    height: 800px;
+    height: 600px;
   }
   .prog_med {
     display: flex;
@@ -164,7 +164,7 @@ label {
 }
 @media screen and (max-width: 600px) {
   #prog_home {
-    height: 500px;
+    height: 520px;
   }
   .prog_med {
     display: none;
