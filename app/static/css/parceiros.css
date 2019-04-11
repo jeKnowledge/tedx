@@ -8,6 +8,7 @@
 /*-----------------------HOME------------------------*/
 #part_home {
   height: 400px;
+  background-color: #000000;
   background-image: url('../img/part.jpg');
   background-position: center;
   background-size: cover;
@@ -47,7 +48,6 @@
 /*-----------------------PARTNERS------------------------*/
 #partners {
   height: 440px;
-  background-color: #ffffff;
 }
 h3 {
   background-color: #000000;
@@ -76,7 +76,6 @@ display: none;
   white-space: nowrap;
   width: 100%;
   }
-}
 .flex-item-start{
   flex-direction: row;
   flex-wrap: wrap;
