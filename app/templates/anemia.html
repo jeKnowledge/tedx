@@ -2,6 +2,16 @@
 
 {% block content %}
 <header id="anemia_home">
-  <p>Brevemente...</p>
+  <!-- <p>Brevemente...</p> -->
+<div class="pdf1">
+  <embed src="{{url_for('static', filename='img/anemia_espelhado.pdf')}}#toolbar=0&navpanes=0&scrollbar=0&zoom=60" width="100%" height="100%">
+</div>
+<div class="pdf2">
+  <embed src="{{url_for('static', filename='img/anemia_espelhado.pdf')}}#toolbar=0&navpanes=0&scrollbar=0&zoom=30" width="100%" height="100%">
+</div>
+<div class="pdf3">
+  <embed src="{{url_for('static', filename='img/anemia_espelhado.pdf')}}#toolbar=0&navpanes=0&scrollbar=0&zoom=-10" width="100%" height="100%">
+</div>
 </header>
+
 {% endblock %}
