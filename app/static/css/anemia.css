@@ -2,7 +2,7 @@
 #anemia_home {
   height: 750px;
   padding-top: 50px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .pdf1 object{
   display: block;
@@ -14,10 +14,30 @@
   margin-left: auto;
   margin-right: auto;
 }
-.pdf3 object{
-  display: none;
+.mobile {
+  padding-top: 140px;
+  text-align: center;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.logo_anemia {
+  display: none;
+}
+.download_btn {
+  margin-top: 40px;
+  display: none;
+}
+.mobile a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #E62B1E;
+  text-align: center;
+  padding: 15px 30px 15px 30px;
+}
+.mobile a:hover {
+  color: #E62B1E;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 910px) {
   #anemia_home {
@@ -30,14 +50,17 @@
     display: block;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #anemia_home {
-    padding-top: 15px;
+    height: 500px;
   }
   .pdf2 object{
     display: none;
   }
-  .pdf3 object{
+  .logo_anemia {
+    display: block;
+  }
+  .download_btn {
     display: block;
   }
 }
