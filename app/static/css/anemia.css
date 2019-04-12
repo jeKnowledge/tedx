@@ -4,17 +4,17 @@
   padding-top: 50px;
   background-color: #000000;
 }
-.pdf1 embed {
+.pdf1 object{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.pdf2 embed{
+.pdf2 object{
   display: none;
   margin-left: auto;
   margin-right: auto;
 }
-.pdf3 embed{
+.pdf3 object{
   display: none;
   margin-left: auto;
   margin-right: auto;
@@ -23,10 +23,10 @@
   #anemia_home {
     padding-top: 35px;
   }
-  .pdf1 embed{
+  .pdf1 object{
     display: none;
   }
-  .pdf2 embed{
+  .pdf2 object{
     display: block;
   }
 }
@@ -34,10 +34,10 @@
   #anemia_home {
     padding-top: 15px;
   }
-  .pdf2 embed{
+  .pdf2 object{
     display: none;
   }
-  .pdf3 embed{
+  .pdf3 object{
     display: block;
   }
 }
